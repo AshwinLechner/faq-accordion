@@ -3,25 +3,43 @@
   margin: 0;
 }
 body {
-  height: 100vh;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 12px;
+  height: 100%;
   background-image: linear-gradient(@main-bg-violet, @main-bg-blue);
   background-size: cover;
   .container {
     .card {
+      position: relative;
       margin: 15% 10%;
       background-color: white;
       border-radius: 15px;
       width: 80vw;
       display: flex;
       flex-direction: row;
-      .box {
-        background: url(../images/illustration-box-desktop.svg);
-        background-repeat: no-repeat;
+      #pic {
+        background-image: url(../images/bg-pattern-desktop.svg);
+        background-size: cover;
+        .box {
+          position: absolute;
+          top: 40%;
+          left: -10%;
+        }
+        .image {
+          margin-left: -5%;
+        }
       }
+
       section {
+        margin-left: 5%;
         text-align: left;
         h1 {
-          padding: 10% 0;
+          font-size: 2rem;
+          margin: 5% 0 10%;
+        }
+        h3 {
+          border-bottom: @divider;
+          margin: 3% 0;
         }
       }
     }

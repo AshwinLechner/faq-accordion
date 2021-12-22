@@ -2,11 +2,14 @@
   margin: 0;
 }
 body {
-  height: 100vh;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 12px;
+  height: 100%;
   background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
   background-size: cover;
 }
 body .container .card {
+  position: relative;
   margin: 15% 10%;
   background-color: white;
   border-radius: 15px;
@@ -14,13 +17,27 @@ body .container .card {
   display: flex;
   flex-direction: row;
 }
-body .container .card .box {
-  background: url(../images/illustration-box-desktop.svg);
-  background-repeat: no-repeat;
+body .container .card #pic {
+  background-image: url(../images/bg-pattern-desktop.svg);
+  background-size: cover;
+}
+body .container .card #pic .box {
+  position: absolute;
+  top: 40%;
+  left: -10%;
+}
+body .container .card #pic .image {
+  margin-left: -5%;
 }
 body .container .card section {
+  margin-left: 5%;
   text-align: left;
 }
 body .container .card section h1 {
-  padding: 10% 0;
+  font-size: 2rem;
+  margin: 5% 0 10%;
+}
+body .container .card section h3 {
+  border-bottom: 1px solid hsl(240, 5%, 91%);
+  margin: 3% 0;
 }
