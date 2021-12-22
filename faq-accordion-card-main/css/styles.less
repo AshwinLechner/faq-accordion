@@ -1,0 +1,29 @@
+@import "variables";
+* {
+  margin: 0;
+}
+body {
+  height: 100vh;
+  background-image: linear-gradient(@main-bg-violet, @main-bg-blue);
+  background-size: cover;
+  .container {
+    .card {
+      margin: 15% 10%;
+      background-color: white;
+      border-radius: 15px;
+      width: 80vw;
+      display: flex;
+      flex-direction: row;
+      .box {
+        background: url(../images/illustration-box-desktop.svg);
+        background-repeat: no-repeat;
+      }
+      section {
+        text-align: left;
+        h1 {
+          padding: 10% 0;
+        }
+      }
+    }
+  }
+}
